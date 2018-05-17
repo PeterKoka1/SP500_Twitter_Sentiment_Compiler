@@ -1,6 +1,9 @@
 """
-The Twitter scraper that is looped over in daily_update.py to parse stock sentiment using Tweepy API for all composites in SP500 
-You need to enter your own consumer_key, consumer_secret, access_token, access_token_secret found at https://apps.twitter.com/app/new 
+The Twitter scraper that is looped over in daily_update.py to 
+parse stock sentiment using Tweepy API for all composites in SP500 
+
+You need to enter your own consumer_key, consumer_secret, 
+access_token, access_token_secret found at https://apps.twitter.com/app/new 
 """
 
 import re
