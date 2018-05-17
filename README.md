@@ -8,7 +8,7 @@
 ```sh
 $ python daily_update.py
 ```
-##### EOD on 2018-05-17 may look as follows:
+##### EOD on 2018-05-17 may update the csv file as follows:
 
 ######     ...
 ###### 2018-05-17 | {'positive_sentiment = 21', 'negative_sentiment = 12', 'neutral_sentiment = 41'}
