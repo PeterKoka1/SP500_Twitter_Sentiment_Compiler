@@ -1,7 +1,3 @@
-"""
-https://apps.twitter.com/app/15247389/keys
-"""
-
 import re
 import datetime
 import tweepy
@@ -14,10 +10,10 @@ class SPX_Twitter_Scraper(object):
 
     def __init__(self):
 
-        consumer_key = '4v98AROh8YM7K6uDDlfYYyRFA'
-        consumer_secret = 'lX8F6mS6OhgoNUpYBo6ryOxUASgFM7U09yzhXyRzQ4jx7EhvGZ'
-        access_token = '884166286296600576-cJlk9WtKAkdXjY5IMjGbQEOOQ9lLGgG'
-        access_token_secret = '40BGALvfXa9S1PCgrMre4jKb6bFfZhMYSOUhAxTKvWuwA'
+        consumer_key = 'YOUR_CONSUMER_KEY'
+        consumer_secret = 'YOUR_CONSUMER_SECRET'
+        access_token = 'YOUR_ACCESS_TOKEN'
+        access_token_secret = 'YOUR_ACCESS_TOKEN_SECRET'
 
         try:
             self.auth = OAuthHandler(
