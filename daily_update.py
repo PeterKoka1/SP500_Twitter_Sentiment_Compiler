@@ -1,3 +1,7 @@
+"""
+The script that will update the SPX_sentiment.csv file based on today's date
+"""
+
 import requests
 import bs4 as bs
 import pickle
@@ -10,15 +14,15 @@ from twitter_scraper_api import SPX_Twitter_Scraper
 
 class Daily_Update(object):
 
-
     def __init__(self):
-
         self.today = datetime.datetime.now().date()
         self.csv_path = 'C:\\Users\\PeterKokalov\\lpthw\\SUMMER2018\\Twitter_SPX_sentiment\\SPX_sentiment.csv'
 
 
     def wiki_scrape(self):
-        r = requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
+        r = requests.get(
+            'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
+            )
         soup = bs.BeautifulSoup(r.text, 'lxml')
         SP500 = soup.find(
             'table',
