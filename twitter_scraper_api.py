@@ -1,15 +1,17 @@
+"""
+The Twitter scraper that is looped over in daily_update.py to parse stock sentiment using Tweepy API for all composites in SP500 
+You need to enter your own consumer_key, consumer_secret, access_token, access_token_secret found at https://apps.twitter.com/app/new 
+"""
+
 import re
 import datetime
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
 
-
 class SPX_Twitter_Scraper(object):
 
-
     def __init__(self):
-
         consumer_key = 'YOUR_CONSUMER_KEY'
         consumer_secret = 'YOUR_CONSUMER_SECRET'
         access_token = 'YOUR_ACCESS_TOKEN'
