@@ -11,7 +11,6 @@ import warnings
 
 from twitter_scraper_api import SPX_Twitter_Scraper
 
-
 class Daily_Update(object):
 
     def __init__(self):
