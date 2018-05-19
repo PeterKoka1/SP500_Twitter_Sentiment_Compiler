@@ -1,5 +1,5 @@
 """
-The script that will update the SPX_sentiment.csv file based on today's date
+The script that will update (i.e., append a new row) the SPX_sentiment.csv file based on today's date
 """
 
 import requests
