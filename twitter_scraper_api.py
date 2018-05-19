@@ -78,7 +78,7 @@ class SPX_Twitter_Scraper(object):
 
 
     def return_percentages(self, stock):
-        tweets = self.get_tweets(_SYMBOL_=stock, count=2)
+        tweets = self.get_tweets(_SYMBOL_=stock, count=200)
         ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 1]
         ntweets = [tweet for tweet in tweets if tweet['sentiment'] == -1]
         ntrtweets = [tweet for tweet in tweets if tweet['sentiment'] == 0]
